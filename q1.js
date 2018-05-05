@@ -8,6 +8,7 @@ function curry(multiplier) {
 function multiply(number, multiplier = 1) {
 
   if (number === undefined) {
+    console.log(multiplier)
     return multiplier;
   }
 
@@ -15,4 +16,8 @@ function multiply(number, multiplier = 1) {
 
 }
 
-console.log(multiply(2)(2)(2)(2)(2)(2)(2)());
+
+multiply(4)(3)(4)(2)();
+multiply(2)(2)(2)(2)(2)(2)(2)();
+
+multiply(4)(3)(4)(2);
