@@ -12,6 +12,8 @@ function multiply(number, multiplier = 1) {
     return multiplier;
   }
 
+  // can't think of how to check for the end of the function calls, this console log prints every call that gets made
+  // console.log(number * multiplier);
   return curry(number * multiplier);
 
 }
